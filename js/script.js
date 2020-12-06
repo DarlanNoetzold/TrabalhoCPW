@@ -1,28 +1,20 @@
 document.querySelector("#arAlun").style.display = 'none';
 document.querySelector("#arProf").style.display = 'none';
 
-function Mudarestado(el) {
-    var display = document.querySelector(el).style.display;
-    if(display == 'none')
-        document.getElementById(el).style.display = 'block';
-        alert("teste");
-}
-
 function enviaEmail(){
     var nome = document.querySelector(".nomePagPrin").value;
 
     alert("Você foi cadastrado " + nome);
 }
-
-function createFerEd(){
+var btnForm = document.querySelector("#btnForm");
+btnForm.onclick = function() {
     var checkboxAl = document.getElementById("checkAL");
     var checkboxPro = document.getElementById("checkPro");
     if(checkboxAl.checked == true) {
-        Mudarestado('#arAluno');
-        alert("asdas")
+        document.querySelector("#arAlun").style.display = 'block';
     }
     if(checkboxPro.checked == true) {
-        Mudarestado('#arProf');
-        
+        document.querySelector("#arProf").style.display = 'block';
     }
+    return false;
 }
