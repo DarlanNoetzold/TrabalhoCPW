@@ -15,11 +15,11 @@ function enviaEmail(){
 }
 
 function createFerEd(){
-    var checkboxAl = document.querySelector("#checkAL");
-    var checkboxPro = document.querySelector("#checkPro");
+    var checkboxAl = document.getElementById("checkAL");
+    var checkboxPro = document.getElementById("checkPro");
     if(checkboxAl.checked == true) {
         Mudarestado('#arAluno');
-        alert("asda");
+        alert("asdas")
     }
     if(checkboxPro.checked == true) {
         Mudarestado('#arProf');
