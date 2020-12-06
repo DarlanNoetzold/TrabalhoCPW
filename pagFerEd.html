@@ -38,11 +38,29 @@
                     <br>
                     <label>Aluno<input type="checkbox" id="checkAL"> Professor<input type="checkbox" id="checkPro"></label>
                     <br>
-                    <input id="btn" type="submit" onclick="createFerEd()" />
+                    <input id="btn" type="submit" onclick="createFerEd()">
                 </form>
+                <hr>
+                <h2>Área do Professor: </h2>
+                <div id="arProf">
+                    <form>
+                        <h3>Opções: </h3>
+                        <button onclick="mostrarNotas()">Adicionar Notas</button>
+                        <button onclick="mostrarFreq()">Adicionar Frequência</button>
+                    </form>
+                </div>
+                <hr>
+                <h2>Área do Aluno: </h2>
+                <div id="arAlun">
+                    <form>
+                        <h3>Opções: </h3>
+                        <button onclick="mostrarNotas()">Mostrar Notas</button>
+                        <button onclick="mostrarFreq()">Mostrar Frequência</button>
+                    </form>
+                </div>
             </div>
             <div id="conteudo-2">
-
+                <p>O conteúdo será atuliazado de acordo com o que você selecionar. Liberando assim a parte referente a sua função na instituição.</p>
             </div>
         </div>
         <div id="rodape">
