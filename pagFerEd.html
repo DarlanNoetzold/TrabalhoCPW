@@ -44,19 +44,39 @@
                 <h2>Área do Professor: </h2>
                 <div id="arProf">
                     <form>
-                        <h3>Opções: </h3>
-                        <button onclick="mostrarNotas()">Adicionar Notas</button>
-                        <button onclick="mostrarFreq()">Adicionar Frequência</button>
+                        <h3>Adicionar Notas: </h3>
+                        <select id="opcoes">
+                            <option value="1">Aluno 1</option>
+                            <option value="2">Aluno 2</option>
+                            <option value="3">Aluno 3</option>
+                            <option value="4">Aluno 4</option>
+                            <option value="5">Aluno 5</option>
+                            <option value="6">Aluno 6</option>
+                            <option value="7">Aluno 7</option>
+                            <option value="8">Aluno 8</option>
+                            <option value="9">Aluno 9</option>
+                            <option value="10">Aluno 10</option>
+                        </select>
+                        <br>
+                        Prova 1:<input type="number" id="prova1i">
+                        <br>
+                        Prova 2:<input type="number" id="prova2i">
+                        <br>
+                        Prova 3:<input type="number" id="prova3i">
+                        <br>
+                        <input type="submit" id="btnNotProf">
                     </form>
+                    
                 </div>
                 <hr>
                 <h2>Área do Aluno: </h2>
                 <div id="arAlun">
                     <form>
                         <h3>Opções: </h3>
-                        <button onclick="mostrarNotas()">Mostrar Notas</button>
-                        <button onclick="mostrarFreq()">Mostrar Frequência</button>
+                        <label>Mostrar Notas: </label><input type="submit" id="btnNotAl">
+                        <label>Mostrar Frequência: </label><input type="submit" id="btnFreqAl">
                     </form>
+                    <div id="resultAl"></div>
                 </div>
             </div>
             <div id="conteudo-2">
